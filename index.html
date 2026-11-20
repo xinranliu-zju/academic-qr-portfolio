@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic profile and research portfolio">
+<title>Xinran Liu | Geophysics</title>
+<style>
+:root{--ink:#172b3a;--muted:#60717d;--line:#dce4e8;--paper:#fbfcfc;--accent:#176b72;--pale:#edf4f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:980px;margin:auto;padding:0 28px}
+header{border-bottom:1px solid var(--line);background:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;min-height:66px;gap:20px}
+.brand{font-family:Georgia,serif;font-size:20px;font-weight:700;letter-spacing:.02em}
+.navlinks{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+.hero{padding:76px 0 58px;display:grid;grid-template-columns:1fr 220px;gap:50px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-size:11px;font-weight:700}
+h1{font:500 clamp(42px,7vw,66px)/1.08 Georgia,serif;letter-spacing:-.035em;margin:14px 0}
+.subtitle{font-size:18px;color:var(--muted);max-width:650px}
+.intro{max-width:690px;margin-top:22px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:10px 17px;border:1px solid var(--accent);border-radius:3px;font-size:13px;font-weight:650}
+.btn.primary{background:var(--accent);color:white}
+.profile-mark{height:190px;border:1px solid var(--line);background:linear-gradient(145deg,#eaf1f0,#f8faf9);display:flex;align-items:center;justify-content:center;color:#527078;font:italic 58px Georgia,serif}
+section{padding:43px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;align-items:baseline;gap:18px;margin-bottom:22px}
+h2{font:500 29px Georgia,serif;margin:0}
+.section-no{font-size:11px;letter-spacing:.12em;color:var(--accent)}
+p{margin:9px 0;color:#344b59}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:#fff;border:1px solid var(--line);padding:20px 21px;border-radius:3px}
+.card h3{font-size:16px;margin:0 0 7px}
+.meta{font-size:12px;color:var(--muted);letter-spacing:.02em}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.tag{font-size:11px;background:var(--pale);color:#315e61;padding:4px 8px;border-radius:2px}
+ul{padding-left:19px;color:#344b59}li{margin:6px 0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-item{padding:15px 0;border-bottom:1px solid var(--line)}
+footer{padding:25px 0 40px;color:var(--muted);font-size:12px}
+.note{background:#fff8e8;border-left:3px solid #c99b43;padding:12px 15px;color:#6b572f;font-size:13px;margin:24px 0}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding:52px 0 42px}.profile-mark{display:none}.navlinks{gap:12px;font-size:12px}.grid,.contact{grid-template-columns:1fr}.wrap{padding:0 20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="brand">Xinran Liu</div><div class="navlinks"><a href="#about">About</a><a href="#research">Research</a><a href="#cv">CV</a><a href="#contact">Contact</a></div></nav></div></header>
+<main class="wrap">
+<div class="hero">
+ <div>
+  <div class="kicker">Academic profile · Geophysics</div>
+  <h1>Xinran Liu</h1>
+  <div class="subtitle">Undergraduate researcher in geophysics<br>Computational methods · Seismic imaging · Subsurface monitoring</div>
+  <p class="intro">I am an undergraduate geology student at Zhejiang University interested in computational geophysics and data-driven methods for subsurface imaging and monitoring. My current work explores robust inversion, distributed acoustic sensing (DAS), and the integration of physical insight with computational approaches.</p>
+  <div class="actions"><a class="btn primary" href="assets/Xinran_Liu_CV.pdf">Download CV</a><a class="btn" href="#research">Explore research</a></div>
+ </div>
+ <div class="profile-mark" aria-label="Initials">XL</div>
+</div>
+<section id="about">
+ <div class="section-head"><span class="section-no">01 / PROFILE</span><h2>About</h2></div>
+ <p>My research interests lie at the intersection of geophysical inversion, seismic methods, and computational tools for monitoring the subsurface. I am particularly interested in methods that make geophysical interpretation more robust under imperfect data conditions and useful for time-lapse applications.</p>
+ <p>I value a balance between mathematical formulation, numerical implementation, and geophysical interpretation—connecting algorithmic development with problems in energy and environmental monitoring.</p>
+ <div class="tags"><span class="tag">Computational geophysics</span><span class="tag">Geophysical inversion</span><span class="tag">DAS</span><span class="tag">Ambient noise</span><span class="tag">Energy monitoring</span></div>
+</section>
+<section id="research">
+ <div class="section-head"><span class="section-no">02 / SELECTED WORK</span><h2>Research</h2></div>
+ <div class="grid">
+  <article class="card"><div class="meta">GEOPHYSICAL INVERSION · PYTORCH</div><h3>2D Magnetotelluric Inversion with Optimal Transport</h3><p>Developing an open-source PyTorch workflow using optimal-transport-based data misfit and graph-space formulations, with an emphasis on inversion behaviour under static-shift and data-distribution differences.</p><div class="tags"><span class="tag">MT inversion</span><span class="tag">Optimal transport</span><span class="tag">Automatic differentiation</span></div><p><a href="https://github.com/MTinv-OT/MTinv_OT" target="_blank" rel="noopener">GitHub repository →</a></p></article>
+  <article class="card"><div class="meta">DISTRIBUTED ACOUSTIC SENSING · AMBIENT NOISE</div><h3>Ambient-noise Interferometry with DAS</h3><p>Working with long-duration DAS recordings to investigate channel-pair geometry, cross-correlation behaviour, preprocessing, and time-lapse sensitivity in a coastal subsurface setting.</p><div class="tags"><span class="tag">DAS</span><span class="tag">Cross-correlation</span><span class="tag">Time-lapse monitoring</span></div></article>
+  <article class="card"><div class="meta">SEISMIC METHODS · GUIDED WAVES</div><h3>Seismic and Guided-wave Characterization</h3><p>Exploring dispersion analysis and near-surface characterization, connecting signal processing, physical modelling, and inversion-oriented interpretation.</p><div class="tags"><span class="tag">Dispersion</span><span class="tag">Surface waves</span><span class="tag">Wave propagation</span></div></article>
+  <article class="card"><div class="meta">FUTURE DIRECTION</div><h3>Learning-based Surrogates for Geophysical Modelling</h3><p>Interested in computationally efficient surrogate modelling and machine-learning methods that complement physics-based forward modelling and inversion.</p><div class="tags"><span class="tag">Scientific machine learning</span><span class="tag">Surrogate modelling</span></div></article>
+ </div>
+</section>
+<section id="cv">
+ <div class="section-head"><span class="section-no">03 / DOCUMENTS</span><h2>Curriculum Vitae</h2></div>
+ <p>For education, research experience, selected presentations, technical skills, and references, please see my CV.</p>
+ <div class="actions"><a class="btn primary" href="assets/Xinran_Liu_CV.pdf">Download CV (PDF)</a></div>
+ <div class="note">Before publishing: place your final PDF at <strong>assets/Xinran_Liu_CV.pdf</strong>. Replace this template CV link if you choose a different filename.</div>
+</section>
+<section id="contact">
+ <div class="section-head"><span class="section-no">04 / CONNECT</span><h2>Contact</h2></div>
+ <div class="contact">
+  <div><div class="contact-item"><div class="meta">EMAIL</div><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></div><div class="contact-item"><div class="meta">GITHUB</div><a href="https://github.com/MTinv-OT/MTinv_OT" target="_blank" rel="noopener">github.com/MTinv-OT</a></div></div>
+  <div><div class="contact-item"><div class="meta">AFFILIATION</div><p>Zhejiang University · College of Earth Sciences</p></div><div class="contact-item"><div class="meta">LOCATION</div><p>Hangzhou, China</p></div></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Xinran Liu · Academic profile</div></footer>
+</body></html>
